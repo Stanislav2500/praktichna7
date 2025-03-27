@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Форма користувача</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Форма користувача</h1>
+        <form id="userForm">
+            <div class="form-group">
+                <label for="name">Ім'я</label>
+                <input type="text" id="name" placeholder="Введіть ім'я" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Введіть email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" placeholder="Введіть телефон" required>
+            </div>
+            <div class="form-group">
+                <label for="avatar">Фото профілю</label>
+                <input type="file" id="avatar" accept="image/*">
+                <img id="avatarPreview" class="avatar-preview" src="" alt="Попередній перегляд">
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" placeholder="Введіть пароль" required>
+            </div>
+            <button type="submit">Зберегти дані</button>
+        </form>
+        <button id="clearData">Очистити дані</button>
+    </div>
+    <script src="1.js"></script>
+</body>
+</html>
